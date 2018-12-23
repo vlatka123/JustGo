@@ -6,25 +6,26 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Login extends AppCompatActivity {
+public class Registration extends AppCompatActivity {
 
-private Button create_a_new_account;
+    private Button already_have_an_account;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_registration);
 
-        create_a_new_account = (Button) findViewById(R.id.go_to_create_account);
+        already_have_an_account = (Button) findViewById(R.id.already_have_a_account);
 
-        create_a_new_account.setOnClickListener(new View.OnClickListener() {
+        already_have_an_account.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(Login.this, Registration.class);
+                Intent intent = new Intent(Registration.this, Login.class);
                 startActivity(intent);
 
             }
         });
+
     }
 }
