@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class Login extends AppCompatActivity {
 
-private Button create_a_new_account;
+    private Button create_a_new_account;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
