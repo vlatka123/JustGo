@@ -27,8 +27,8 @@
             android:layout_margin="2sp"
             android:gravity="center"
             android:text="@string/welcome_to"
-            android:textStyle="bold"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/app_name"
@@ -37,8 +37,15 @@
             android:layout_margin="2sp"
             android:gravity="center"
             android:text="@string/just_go"
-            android:textStyle="bold"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/login_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/login_avatar" />
+
 
     </LinearLayout>
 
@@ -48,7 +55,7 @@
         android:layout_height="0sp"
         android:layout_margin="5sp"
         android:layout_weight="1"
-        android:gravity="center"
+        android:gravity="center_vertical|center"
         android:orientation="vertical">
 
         <EditText
@@ -80,7 +87,7 @@
         android:layout_height="0sp"
         android:layout_margin="5sp"
         android:layout_weight="1"
-        android:gravity="bottom|center"
+        android:gravity="center_vertical|center"
         android:orientation="vertical">
 
         <Button
