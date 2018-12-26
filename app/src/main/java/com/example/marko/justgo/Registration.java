@@ -18,6 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class Registration extends AppCompatActivity {
 
+    // Instanciranje variabli za sva polja i botune
     private Button already_have_an_account;
     private Button create_account;
     private EditText email;
@@ -50,6 +51,7 @@ public class Registration extends AppCompatActivity {
 
                 Intent intent = new Intent(Registration.this, Login.class);
                 startActivity(intent);
+                finish();
 
             }
         });
@@ -84,6 +86,7 @@ public class Registration extends AppCompatActivity {
                                         Toast.makeText(Registration.this, "You are succesfully registrated", Toast.LENGTH_LONG).show();
                                         Intent intent = new Intent(Registration.this, Login.class);
                                         startActivity(intent);
+                                        finish();
                                     } else {
                                         Toast.makeText(Registration.this, "Registration failed", Toast.LENGTH_LONG).show();
                                     }

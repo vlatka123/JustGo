@@ -4,13 +4,11 @@
     <string name="password">Password</string>
     <string name="login">Login to Account</string>
     <string name="sign_up">Create a new Account</string>
-    <string name="welcome_to">Welcome to</string>
-    <string name="just_go">Just Go</string>
+    <string name="welcome_to">Welcome back</string>
     <string name="create_a_new_account">Create a new Account</string>
-    <string name="just_go_app">Just Go</string>
     <string name="set_email">Email</string>
     <string name="set_password">Password</string>
     <string name="confirm_password">Confirm Password</string>
-    <string name="registration_signup">Create Account</string>
+    <string name="registration_signup">Create an Account</string>
     <string name="registration_login">Already have an Account</string>
 </resources>

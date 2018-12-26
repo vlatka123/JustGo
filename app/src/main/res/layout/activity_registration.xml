@@ -31,16 +31,6 @@
             android:textStyle="bold"
             android:textSize="25sp" />
 
-        <TextView
-            android:id="@+id/name_of_app"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="2sp"
-            android:gravity="center"
-            android:text="@string/just_go_app"
-            android:textStyle="bold"
-            android:textSize="30sp" />
-
         <ImageView
             android:id="@+id/registration_avatar"
             android:layout_width="match_parent"
@@ -97,7 +87,7 @@
         android:layout_height="0sp"
         android:layout_margin="5sp"
         android:layout_weight="1"
-        android:gravity="center_vertical|center"
+        android:gravity="bottom|center_vertical|center"
         android:orientation="vertical">
 
 
