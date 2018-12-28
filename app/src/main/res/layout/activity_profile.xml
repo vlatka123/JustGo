@@ -18,11 +18,12 @@
         android:orientation="vertical"
         android:background="@color/colorPrimaryDark">
 
-        <Toolbar
+        <!-- Ukljuci Toolbar (toolbar_main) -->
+        <include
+            android:id="@+id/profile_toolbar"
+            layout="@layout/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-        </Toolbar>
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 
@@ -142,7 +143,7 @@
             android:layout_width="200sp"
             android:layout_height="wrap_content"
             android:layout_margin="5sp"
-            android:text="Deactive account"
+            android:text="@string/deactive_account"
             android:textAllCaps="false" />
     </LinearLayout>
 

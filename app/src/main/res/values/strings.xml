@@ -18,4 +18,8 @@
     <string name="user_surname">User surname</string>
     <string name="profile_email">Email</string>
     <string name="profile_picture">Profile picture</string>
+    <string name="deactive_account">Deactive account</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_my_trips">My trips</string>
+    <string name="menu_utilities">Utilities</string>
 </resources>
