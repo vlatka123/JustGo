@@ -11,4 +11,11 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="registration_signup">Create an Account</string>
     <string name="registration_login">Already have an Account</string>
+    <string name="change_your_data">Change your data</string>
+    <string name="logout">Logout</string>
+    <string name="add_profile_picture">Add profile picture</string>
+    <string name="user_name">User name</string>
+    <string name="user_surname">User surname</string>
+    <string name="profile_email">Email</string>
+    <string name="profile_picture">Profile picture</string>
 </resources>
