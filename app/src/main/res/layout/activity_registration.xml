@@ -87,7 +87,7 @@
         android:layout_height="0sp"
         android:layout_margin="5sp"
         android:layout_weight="1"
-        android:gravity="bottom|center_vertical|center"
+        android:gravity="bottom|center"
         android:orientation="vertical">
 
 
@@ -95,7 +95,7 @@
             android:id="@+id/registration_signup"
             android:layout_width="200sp"
             android:layout_height="wrap_content"
-            android:layout_margin="2sp"
+            android:layout_margin="5sp"
             android:text="@string/registration_signup"
             android:textAllCaps="false" />
 
@@ -103,7 +103,7 @@
             android:id="@+id/already_have_a_account"
             android:layout_width="200sp"
             android:layout_height="wrap_content"
-            android:layout_margin="2sp"
+            android:layout_margin="5sp"
             android:text="@string/registration_login"
             android:textAllCaps="false" />
 
