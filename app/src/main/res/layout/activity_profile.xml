@@ -88,6 +88,15 @@
                     android:text="@string/profile_email"
                     android:textSize="20sp" />
 
+                <TextView
+                    android:id="@+id/country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:gravity="center"
+                    android:text="@string/profile_country"
+                    android:textSize="20sp" />
+
             </LinearLayout>
         </LinearLayout>
 

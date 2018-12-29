@@ -42,8 +42,11 @@ public class Profile extends AppCompatActivity {
             case R.id.utilities_menu:
                 Toast.makeText(getApplicationContext(), "Utilities", Toast.LENGTH_SHORT).show();
                 break;
-                default:
+            case R.id.bug_report_menu:
+                Toast.makeText(getApplicationContext(), "Bug", Toast.LENGTH_SHORT).show();
+                break;
 
+                default:
         }
         return super.onOptionsItemSelected(item);
     }

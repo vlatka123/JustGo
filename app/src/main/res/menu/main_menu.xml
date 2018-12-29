@@ -18,4 +18,9 @@
         android:title="@string/menu_utilities"
         app:showAsAction="never"/>
 
+    <item
+        android:id="@+id/bug_report_menu"
+        android:title="@string/menu_bug_report"
+        app:showAsAction="never"/>
+
 </menu>

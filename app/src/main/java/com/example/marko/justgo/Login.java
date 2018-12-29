@@ -20,6 +20,7 @@ public class Login extends AppCompatActivity {
 
     private Button create_a_new_account;
     private Button login_to_app;
+    private Button forgot_pass;
     private EditText enter_email;
     private EditText enter_password;
 
@@ -36,6 +37,7 @@ public class Login extends AppCompatActivity {
         // Button Initialization
         create_a_new_account = (Button) findViewById(R.id.go_to_create_account);
         login_to_app = (Button) findViewById(R.id.login);
+        forgot_pass = (Button) findViewById(R.id.forgot_password);
 
         // EditText initialization
         enter_email = (EditText) findViewById(R.id.email);
@@ -81,6 +83,17 @@ public class Login extends AppCompatActivity {
                 else {
                     Toast.makeText(Login.this, "Enter email or password", Toast.LENGTH_LONG).show();
                 }
+
+            }
+        });
+
+        forgot_pass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(Login.this, FogotPassword.class);
+                startActivity(intent);
+                finish();
 
             }
         });
