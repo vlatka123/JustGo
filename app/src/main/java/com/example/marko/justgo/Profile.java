@@ -53,6 +53,16 @@ public class Profile extends AppCompatActivity {
         // Poruka koja ce se pojaviti kada korisnik odluci deaktivirati account
         final String deactivate_message = "You'll permanently delete account and you won't be able to retrieve your data!";
 
+        // Log out from account, return to log in screen
+        logout_from_app.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut();
+                startActivity(new Intent(Profile.this, Login.class));
+                finish();
+            }
+        });
+
         // Permanently delete account
         deactivate_account.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -105,7 +115,7 @@ public class Profile extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
-    // Omogucava da se preko menu-a ide na druge activity
+    // Omogucava da se preko menu-a ide na druge activity (za sada ne postoje drugi activity)
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
