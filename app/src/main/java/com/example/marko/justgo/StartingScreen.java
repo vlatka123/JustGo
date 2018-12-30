@@ -12,6 +12,7 @@ public class StartingScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_starting_screen);
 
+        // Prikazi pocetni zaslon 1,5 sekundi i automatski prijedi na log in screen
         final Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             @Override

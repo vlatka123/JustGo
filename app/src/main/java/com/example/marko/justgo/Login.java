@@ -18,6 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class Login extends AppCompatActivity {
 
+    // Declaration of variables
     private Button create_a_new_account;
     private Button login_to_app;
     private Button forgot_pass;
@@ -49,11 +50,11 @@ public class Login extends AppCompatActivity {
 
                 Intent intent = new Intent(Login.this, Registration.class);
                 startActivity(intent);
-                finish();
 
             }
         });
 
+        // Button log in, pri cemu se provjerava jesu li sva polja popunjena i imali kakvih problema sa samim logiranjem
         login_to_app.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -61,6 +62,7 @@ public class Login extends AppCompatActivity {
                 String check_email = enter_email.getText().toString().trim();
                 String check_password = enter_password.getText().toString().trim();
 
+                // Ako polje email i password nisu popunjena upozori korisnika s toast message u protivnom probaj se ulogirati
                 if (!(TextUtils.isEmpty(check_email) && TextUtils.isEmpty(check_password))) {
 
                     firebaseAuth.signInWithEmailAndPassword(check_email, check_password).addOnCompleteListener(Login.this, new OnCompleteListener<AuthResult>() {
@@ -74,7 +76,7 @@ public class Login extends AppCompatActivity {
                                 finish();
                             }
                             else {
-                                Toast.makeText(Login.this, "Login failed", Toast.LENGTH_LONG).show();
+                                Toast.makeText(Login.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
                             }
                         }
                     });
@@ -87,13 +89,13 @@ public class Login extends AppCompatActivity {
             }
         });
 
+        // Button koji ce korisnik koristiti u slucaju da ne moze se sjetiti lozinke te ce ga odvesti na activity ForgotPassword
         forgot_pass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 Intent intent = new Intent(Login.this, FogotPassword.class);
                 startActivity(intent);
-                finish();
 
             }
         });
