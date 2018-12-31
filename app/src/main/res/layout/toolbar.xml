@@ -5,7 +5,8 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/toolbar"
-    android:background="@color/colorPrimary"
+    android:background="@color/Toolbar"
+    app:titleTextColor="@color/colorPrimaryDark"
     app:theme = "@style/CustomToolbarStyle"
     app:popupTheme="@style/CustomPopupMenuStyle">
 

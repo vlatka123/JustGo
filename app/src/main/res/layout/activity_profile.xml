@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="2sp"
+    android:background="@color/colorPrimary"
     android:gravity="top|center"
     android:orientation="vertical"
     android:weightSum="10"
@@ -66,8 +66,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5sp"
+                    android:background="@color/backgroundText"
                     android:gravity="center"
                     android:text="@string/user_name"
+                    android:textColor="@color/mainText"
                     android:textSize="20sp" />
 
                 <TextView
@@ -75,17 +77,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5sp"
+                    android:background="@color/backgroundText"
                     android:gravity="center"
                     android:text="@string/user_surname"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:id="@+id/email"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5sp"
-                    android:gravity="center"
-                    android:text="@string/profile_email"
+                    android:textColor="@color/mainText"
                     android:textSize="20sp" />
 
                 <TextView
@@ -93,8 +88,21 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5sp"
+                    android:background="@color/backgroundText"
                     android:gravity="center"
                     android:text="@string/profile_country"
+                    android:textColor="@color/mainText"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:background="@color/backgroundText"
+                    android:gravity="center"
+                    android:text="@string/profile_email"
+                    android:textColor="@color/mainText"
                     android:textSize="20sp" />
 
             </LinearLayout>
@@ -106,15 +114,16 @@
             android:layout_margin="5sp"
             android:layout_weight="3"
             android:gravity="top"
-            android:orientation="vertical"
-            android:background="@color/colorAccent">
+            android:orientation="vertical">
 
             <Button
                 android:id="@+id/btn_add_picture"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5sp"
+                android:backgroundTint="@color/backgroundButton"
                 android:text="@string/add_profile_picture"
+                android:textColor="@color/textButten"
                 android:textAllCaps="false" />
 
             <Button
@@ -122,7 +131,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5sp"
+                android:backgroundTint="@color/backgroundButton"
                 android:text="@string/change_your_data"
+                android:textColor="@color/textButten"
                 android:textAllCaps="false" />
 
         </LinearLayout>
@@ -134,7 +145,6 @@
         android:layout_height="0sp"
         android:layout_margin="5sp"
         android:layout_weight="3"
-        android:background="@color/colorAccent"
         android:gravity="bottom|center"
         android:orientation="vertical">
 
@@ -144,7 +154,9 @@
             android:layout_width="200sp"
             android:layout_height="wrap_content"
             android:layout_margin="5sp"
+            android:backgroundTint="@color/backgroundButton"
             android:text="@string/logout"
+            android:textColor="@color/textButten"
             android:textAllCaps="false" />
 
         <Button
@@ -152,8 +164,11 @@
             android:layout_width="200sp"
             android:layout_height="wrap_content"
             android:layout_margin="5sp"
+            android:backgroundTint="@color/backgroundButton"
             android:text="@string/deactive_account"
-            android:textAllCaps="false" />
+            android:textAllCaps="false"
+            android:textColor="@color/textButten"
+            android:textColorLink="@color/backgroundText" />
     </LinearLayout>
 
 </LinearLayout>
