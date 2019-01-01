@@ -18,7 +18,8 @@
     <!-- Menu Item Theme -->
     <style name="CustomPopupMenuStyle" parent="Theme.AppCompat.Light.NoActionBar">
 
-        <item name="android:background">@color/backgroundButton</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/Toolbar</item>
         <item name="overlapAnchor">false</item>
 
     </style>
