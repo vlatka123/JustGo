@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/toolbar"
     android:background="@color/Toolbar"
-    app:titleTextColor="@color/colorPrimaryDark"
+    app:titleTextColor="@color/textButten"
     app:theme = "@style/CustomToolbarStyle"
     app:popupTheme="@style/CustomPopupMenuStyle">
 

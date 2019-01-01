@@ -15,8 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="5sp"
         android:gravity="top"
-        android:orientation="vertical"
-        android:background="@color/colorPrimaryDark">
+        android:orientation="vertical" >
 
         <!-- Ukljuci Toolbar (toolbar_main) -->
         <include
@@ -32,10 +31,10 @@
         android:layout_height="0sp"
         android:layout_margin="5sp"
         android:layout_weight="7"
-        android:weightSum="5"
+        android:background="@color/colorPrimary"
         android:gravity="top"
         android:orientation="vertical"
-        android:background="@color/colorPrimary">
+        android:weightSum="4">
 
 
         <LinearLayout
@@ -123,8 +122,8 @@
                 android:layout_margin="5sp"
                 android:backgroundTint="@color/backgroundButton"
                 android:text="@string/add_profile_picture"
-                android:textColor="@color/textButten"
-                android:textAllCaps="false" />
+                android:textAllCaps="false"
+                android:textColor="@color/textButten" />
 
             <Button
                 android:id="@+id/btn_change_data"
@@ -133,8 +132,8 @@
                 android:layout_margin="5sp"
                 android:backgroundTint="@color/backgroundButton"
                 android:text="@string/change_your_data"
-                android:textColor="@color/textButten"
-                android:textAllCaps="false" />
+                android:textAllCaps="false"
+                android:textColor="@color/textButten" />
 
         </LinearLayout>
 
@@ -156,8 +155,8 @@
             android:layout_margin="5sp"
             android:backgroundTint="@color/backgroundButton"
             android:text="@string/logout"
-            android:textColor="@color/textButten"
-            android:textAllCaps="false" />
+            android:textAllCaps="false"
+            android:textColor="@color/textButten" />
 
         <Button
             android:id="@+id/btn_deactive"

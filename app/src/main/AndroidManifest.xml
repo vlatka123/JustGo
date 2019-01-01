@@ -21,7 +21,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FogotPassword"></activity>
+        <activity android:name=".FogotPassword" />
+        <activity android:name=".My_trips" />
+        <activity android:name=".Utilities"></activity>
     </application>
 
 </manifest>

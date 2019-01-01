@@ -131,6 +131,9 @@ public class Profile extends AppCompatActivity {
             case R.id.bug_report_menu:
                 Toast.makeText(getApplicationContext(), "Bug", Toast.LENGTH_SHORT).show();
                 break;
+            case R.id.check_for_updates_menu:
+                Toast.makeText(getApplicationContext(), "Check for updates", Toast.LENGTH_SHORT).show();
+                break;
 
                 default:
         }

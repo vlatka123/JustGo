@@ -24,6 +24,7 @@
     <string name="menu_my_trips">My Trips</string>
     <string name="menu_utilities">Utilities</string>
     <string name="menu_bug_report">Report a Bug</string>
+    <string name="menu_check_for_updates">Check for updates</string>
     <string name="forgot_password">Forgot password?</string>
     <string name="forgot_password_text">Enter an email on which you will get link for entering a new password</string>
     <string name="send_link">Send link</string>
