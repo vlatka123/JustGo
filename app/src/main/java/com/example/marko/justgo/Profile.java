@@ -51,7 +51,7 @@ public class Profile extends AppCompatActivity {
         firebaseUser = firebaseAuth.getCurrentUser();
 
         // Poruka koja ce se pojaviti kada korisnik odluci deaktivirati account
-        final String deactivate_message = "You'll permanently delete account and you won't be able to retrieve your data!";
+        final String deactivate_message = "You'll permanently delete the account and you won't be able to retrieve your data!";
 
         // Log out from account, return to log in screen
         logout_from_app.setOnClickListener(new View.OnClickListener() {
@@ -70,6 +70,7 @@ public class Profile extends AppCompatActivity {
                 final AlertDialog.Builder conform_deletion = new AlertDialog.Builder(Profile.this);
                 conform_deletion.setTitle("Deactivate account");
                 conform_deletion.setMessage(deactivate_message);
+                conform_deletion.setCancelable(false);
 
                 // Positive button (Delete)
                 conform_deletion.setPositiveButton("Delete", new DialogInterface.OnClickListener() {
